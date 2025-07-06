@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luke Powlson - Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+          margin: 0;
+          font-family: sans-serif;
+        }
+
+        .site-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.5rem 1rem;
+          background-color: #f5f5f5;
+        }
+
+        .site-header .site-name {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        .top-nav {
+          text-align: center;
+          margin-top: 1rem;
+        }
+
+        .top-nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: inline-flex;
+          gap: 1.5rem;
+        }
+
+        .top-nav a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+        }
+
+        .top-nav a:hover {
+          text-decoration: underline;
+        }
+
+        main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-top: 2rem;
+          max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .page-title {
+          font-size: 1.8rem;
+          margin-top: 1rem;
+        }
+
+        .profile-pic {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-top: 1rem;
+        }
+
+        .intro {
+          font-size: 1.2rem;
+          margin: 1rem 0;
+        }
+
+        .testimonial-section {
+          margin-top: 3rem;
+          width: 100%;
+          text-align: left;
+        }
+
+        .testimonial {
+          margin-bottom: 1.5rem;
+        }
+
+        .testimonial h4 {
+          margin-bottom: 0.3rem;
+        }
+
+        .testimonial p {
+          margin: 0;
+          font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<div class="site-header">
+    <div class="site-name">Luke Powlson</div>
+</div>
+
+<nav class="top-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resume.html">CV/Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="page-title">Welcome</div>
+    <p class="intro">
+        My name is Luke Powlson, with an academic and work background in sport, I am currently studying an MSc in Computer Science, with the goal of transitioning my career into the tech industry. This site showcases my journey, the projects I’ve built, and my ongoing development as I work toward a future in software.
+    </p>
+    <p class="intro">
+        Please note this Website is in very early stages of development and may  not be complete. Please email if you have any further questions.
+    </p>
+    <img src="ProfilePic4.jpg" alt="My Photo" class="profile-pic" />
+
+    <section class="testimonial-section">
+        <h3>What Others Say</h3>
+
+        <div class="testimonial">
+            <h4>Highlighting Reference Person 1 - What they do/their relation to me</h4>
+            <p>"Person 1 Quote"</p>
+            <h4>Highlighting Reference Person 2 - What they do/their relation to me</h4>
+            <p>"Person 2 Quote"</p>
+            <h4>Click CV/Testimonials for more</h4>
+            <p><!-- Their testimonial statement here --></p>
+            <h4><!-- Name of the person --></h4>
+            <p><!-- Their testimonial statement here --></p>
+        </div>
+
+        <!-- Add more testimonial blocks as needed -->
+    </section>
+</main>
+</body>
+</html>

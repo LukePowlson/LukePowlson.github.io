@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luke Powlson</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+          margin: 0;
+          font-family: sans-serif;
+        }
+
+        .site-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.5rem 1rem;
+          background-color: #f5f5f5;
+        }
+
+        .site-header .site-name {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        .top-nav {
+          text-align: center;
+          margin-top: 1rem;
+        }
+
+        .top-nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: inline-flex;
+          gap: 1.5rem;
+        }
+
+        .top-nav a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+        }
+
+        .top-nav a:hover {
+          text-decoration: underline;
+        }
+
+        main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-top: 2rem;
+          max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .page-title {
+          font-size: 1.8rem;
+          margin-top: 1rem;
+        }
+
+        .project {
+          border: 1px solid #ccc;
+          padding: 1rem;
+          margin: 1.5rem 0;
+          border-radius: 8px;
+          text-align: left;
+          width: 100%;
+        }
+
+        .project h3 {
+          margin-top: 0;
+        }
+
+        .project p {
+          margin: 0.5rem 0;
+        }
+
+        .project a {
+          font-weight: bold;
+          color: #0056b3;
+          text-decoration: none;
+        }
+
+        .project a:hover {
+          text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="site-header">
+    <div class="site-name">Luke Powlson</div>
+</div>
+
+<nav class="top-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resume.html">CV/Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="page-title">Projects</div>
+
+    <div class="project">
+        <h3>Arduino - Tetris alarm</h3>
+        <p>This is a JavaFX desktop application that calculates a user’s Basal Metabolic Rate (BMR), Total Daily Energy Expenditure (TDEE), and personalized macronutrient targets based on their age, weight, height, activity level, and fitness goal. It helps users understand and plan their daily nutritional needs with ease and accuracy.</p>
+        <p><a href="<!-- GitHub link -->" target="_blank">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+        <h3>Diet Calculator – Daily Calorie & Macronutrient Estimator</h3>
+        <p>This is a JavaFX desktop application that calculates a user’s Basal Metabolic Rate (BMR), Total Daily Energy Expenditure (TDEE), and personalized macronutrient targets based on their age, weight, height, activity level, and fitness goal. It helps users understand and plan their daily nutritional needs with ease and accuracy.</p>
+        <p><a href="<!-- GitHub link -->" target="_blank">View on GitHub</a></p>
+    </div>
+
+    <div class="project">
+        <h3>Personal Website</h3>
+        <p>I built this site to showcase my journey into tech, share my projects, and highlight my skills as I transition from a background in sport to a career in software. The goals is for it to act as my online CV and portfolio, helping the industry learn more about me.</p>
+        <p><a href="<!-- GitHub link -->" target="_blank">View on GitHub</a></p>
+    </div>
+
+    <!-- Duplicate the above .project div for each additional project -->
+</main>
+</body>
+</html>

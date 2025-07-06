@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luke Powlson - Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+          margin: 0;
+          font-family: sans-serif;
+        }
+
+        .site-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.5rem 1rem;
+          background-color: #f5f5f5;
+        }
+
+        .site-header .site-name {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        .top-nav {
+          text-align: center;
+          margin-top: 1rem;
+        }
+
+        .top-nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: inline-flex;
+          gap: 1.5rem;
+        }
+
+        .top-nav a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+        }
+
+        .top-nav a:hover {
+          text-decoration: underline;
+        }
+
+        main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-top: 2rem;
+          max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .page-title {
+          font-size: 1.8rem;
+          margin-top: 1rem;
+        }
+
+        .entry {
+          border-bottom: 1px solid #ccc;
+          padding: 1.5rem 0;
+          width: 100%;
+          text-align: left;
+        }
+
+        .entry h3 {
+          margin-bottom: 0.25rem;
+        }
+
+        .entry small {
+          display: block;
+          margin-bottom: 0.5rem;
+          color: #666;
+        }
+
+        .entry ul {
+          margin-top: 0.5rem;
+          padding-left: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+<div class="site-header">
+    <div class="site-name">Luke Powlson</div>
+</div>
+
+<nav class="top-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resume.html">CV/Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="page-title">Blog </div>
+    <p>Monthly summaries of my learning, projects, and reflections.</p>
+
+    <!-- Newest entries should be added at the top -->
+
+    <div class="entry">
+        <h3>June 2025</h3>
+        <small>Summery / general overview</small>
+        <ul>
+            <li>I did this</li>
+            <li>and this</li>
+            <li>and this</li>
+            <li>add a line of what I aim to do the following month?</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <h3>May 2025</h3>
+        <small>Further learning</small>
+        <ul>
+            <li>I did this</li>
+            <li>and this</li>
+            <li>and this</li>
+            <li>add a line of what I aim to do the following month?</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <h3>September 2024 - April 2025</h3>
+        <small>Where it all begins! My First "Hello World"</small>
+        <ul>
+            <li>I did this</li>
+            <li>and this</li>
+            <li>and this</li>
+            <li>add a line of what I aim to do the following month?</li>
+        </ul>
+    </div>
+
+    <!-- Duplicate .entry blocks for new updates above older ones -->
+
+</main>
+</body>
+</html>

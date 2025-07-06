@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luke Powlson - CV and Testimonials</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+          margin: 0;
+          font-family: sans-serif;
+        }
+
+        .site-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.5rem 1rem;
+          background-color: #f5f5f5;
+        }
+
+        .site-header .site-name {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        .top-nav {
+          text-align: center;
+          margin-top: 1rem;
+        }
+
+        .top-nav ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: inline-flex;
+          gap: 1.5rem;
+        }
+
+        .top-nav a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+        }
+
+        .top-nav a:hover {
+          text-decoration: underline;
+        }
+
+        main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-top: 2rem;
+          max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .page-title {
+          font-size: 1.8rem;
+          margin-top: 1rem;
+        }
+
+        .filters button {
+          margin: 0.3rem;
+          padding: 0.5rem 1rem;
+          border: 1px solid #aaa;
+          background-color: #f9f9f9;
+          cursor: pointer;
+        }
+
+        .filters button:hover {
+          background-color: #e0e0e0;
+        }
+
+        .cv-section {
+          display: none;
+          margin-top: 1rem;
+          text-align: left;
+          width: 100%;
+        }
+
+        .cv-section.active {
+          display: block;
+        }
+
+        .testimonial-section {
+          margin-top: 3rem;
+          width: 100%;
+          text-align: center;
+        }
+
+        .testimonial-section h3 {
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+        }
+
+        .testimonial {
+          margin-bottom: 1.5rem;
+          text-align: left;
+        }
+
+        .testimonial h4 {
+          margin-bottom: 0.3rem;
+        }
+
+        .testimonial p {
+          margin: 0;
+          font-style: italic;
+        }
+    </style>
+    <script>
+        function showSection(section) {
+          document.querySelectorAll('.cv-section').forEach(div => {
+            div.classList.remove('active');
+          });
+          document.getElementById(section).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+<div class="site-header">
+    <div class="site-name">Luke Powlson</div>
+</div>
+
+<nav class="top-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="resume.html">CV/Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="page-title">CV and Testimonials</div>
+    <p><a href="your-resume-link.pdf" target="_blank">Download CV (PDF)</a></p>
+
+    <section class="testimonial-section">
+        <h3>Testimonials</h3>
+
+        <div class="testimonial">
+            <h4>Reference Person 1 - What they do/their relation to me</h4>
+            <p>"Person 1 Quote"</p>
+            <h4>Reference Person 2 - What they do/their relation to me</h4>
+            <p>"Person 2 Quote"</p>
+            <h4>Reference Person 3 - What they do/their relation to me</h4>
+            <p>"Person 3 Quote"</p>
+            <h4><!-- Name of the person --></h4>
+            <p><!-- Their testimonial statement here --></p>
+        </div>
+
+        <!-- Duplicate .testimonial blocks for additional testimonials -->
+    </section>
+</main>
+</body>
+</html>
